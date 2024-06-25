@@ -1,0 +1,266 @@
+.nav {
+    background-color: #373A40;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+    font-family: "Anton", sans-serif;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.navLinksContainer {
+    background-color: #EEEEEE;
+    height: 0px;
+    overflow: hidden;
+
+}
+
+.showNavLinksContainer {
+    position: static !important;
+    height: fit-content !important;
+    padding: 0 !important;
+}
+
+.navLink,
+.sideCartClose,
+.customCartSide {
+    color: #373A40;
+}
+
+.navLinkShow {
+    color: #EEEEEE;
+    transition: .33s ease-in-out;
+}
+
+.navLinkShow:hover {
+    transform: scale(1.2);
+    color: #DC5F00;
+    font-weight: bold;
+}
+
+.active {
+    color: #DC5F00;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.iconButton {
+    color: #EEEEEE;
+    cursor: pointer;
+    transition: .33s ease-in-out;
+}
+
+.iconButtonActive {
+    color: #DC5F00;
+    transform: scale(1.2);
+}
+
+.iconButton:hover {
+    transform: scale(1.2);
+    color: #DC5F00;
+    font-weight: bold;
+}
+
+.countProductSave {
+    color: #DC5F00;
+    font-weight: bold;
+}
+
+/* Product action */
+.productAction {
+    color: #DC5F00;
+}
+
+.productInfoModal,
+.sideCartClose,
+.customCartSide {
+    background-color: #EEEEEE;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+}
+
+.sideCartClose:hover {
+    background-color: #DC5F00;
+}
+
+.sideCartBtnAction {
+    cursor: pointer;
+    position: relative;
+    color: #DC5F00;
+    border: 2px solid #DC5F00;
+    background-color: transparent;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.sideCartBtnAction::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #DC5F00;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.sideCartBtnAction:hover::before {
+    scale: 3;
+}
+
+.sideCartBtnAction:hover {
+    color: #373A40;
+    scale: 1.1;
+    box-shadow: 0 0px 4px #DC5F00;
+}
+
+.sideCartBtnAction:active {
+    scale: 1;
+}
+
+/* Product Collection */
+.customBackground {
+    background-color: #EEEEEE;
+}
+
+.customBanner {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customBanner-1 {
+    background-image: url('../assets/prdocutCollection1.jpg');
+    cursor: pointer;
+}
+
+.customBanner-2 {
+    background-image: url('../assets/prdocutCollection2.jpg');
+    cursor: pointer;
+}
+
+.customBanner-3 {
+    background-image: url('../assets/prdocutCollection3.jpg');
+    cursor: pointer;
+}
+
+
+.customBanner {
+    border: none;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.customBanner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #DC5F00;
+    transition: 0.3s ease;
+}
+
+.customBanner:hover {
+    color: #DC5F00;
+    transition-delay: 0.3s;
+}
+
+.customBanner:hover::before {
+    width: 100%;
+}
+
+.customBanner::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #DC5F00;
+    transition: 0.3s ease;
+    z-index: -1;
+}
+
+.customBanner:hover::after {
+    height: 100%;
+    transition-delay: 0.3s;
+}
+
+/* footer */
+footer {
+    background-color: #373A40;
+    color: #EEEEEE;
+}
+
+footer li {
+    color: #DC5F00;
+}
+
+/* Pages Bg */
+.pagesBg {
+    background-image: url('../assets/pagesBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    overflow: hidden;
+}
+
+/* Wishlist page */
+.customWishlistPage {
+    color: #EEEEEE;
+}
+
+.customTableCon {
+    color: #373A40;
+    background-color: #EEEEEE;
+}
+
+th {
+    background-color: #686D76;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Shopping Area */
+.clearCartBtn {
+    background-color: #EEEEEE;
+    color: #373A40;
+    font-weight: bold;
+    border: 1px solid #373A40;
+    border-radius: 5px;
+    transition: .33s ease-in-out;
+}
+
+.continueShoppingBtn {
+    background-color: #DC5F00;
+    color: #373A40;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #DC5F00;
+    transition: .33s ease-in-out;
+}
+
+.clearCartBtn:hover {
+    background-color: #DC5F00;
+    border: 1px solid #DC5F00;
+}
+
+.continueShoppingBtn:hover {
+    background-color: #EEEEEE;
+    border: 1px solid #373A40;
+}
+
+.inputCouponCode {
+    border: 1px solid #686D76;
+    outline: none;
+    color: #686D76;
+}

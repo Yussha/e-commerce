@@ -1,0 +1,19 @@
+.customShop {
+    color: #EEEEEE;
+}
+
+.containerContents {
+    border: 1px solid #686D76;
+}
+
+.dropdownContent {
+    background-color: #EEEEEE;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+    color: #373A40;
+}
+
+.discountTag {
+    background-color: #DC5F00;
+}

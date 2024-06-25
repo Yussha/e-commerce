@@ -1,0 +1,52 @@
+.customAbout {
+    color: #EEEEEE;
+}
+
+.bgShoes {
+    background-image: url('../../assets/backDesignImgShoes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customContentCon {
+    color: #373A40;
+}
+
+
+.contactUsBtn {
+    cursor: pointer;
+    position: relative;
+    color: #DC5F00;
+    border: 2px solid #DC5F00;
+    background-color: transparent;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.contactUsBtn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #DC5F00;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.contactUsBtn:hover::before {
+    scale: 3;
+}
+
+.contactUsBtn:hover {
+    color: #373A40;
+    scale: 1.1;
+    box-shadow: 0 0px 4px #DC5F00;
+}
+
+.contactUsBtn:active {
+    scale: 1;
+}
