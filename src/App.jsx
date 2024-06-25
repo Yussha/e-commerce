@@ -34,7 +34,7 @@ function App() {
           <main className='app'>
             <Navbar />
             <Routes>
-              <Route path='*' element={<Home />} />
+              <Route exact path='/e-commerce/' element={<Home />} />
               <Route path='/about' element={<About />} />
               <Route path='/shop' element={<Shop />} />
               <Route path='/contactUs' element={<ContactUs />} />

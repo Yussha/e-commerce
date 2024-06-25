@@ -57,7 +57,7 @@ export default function Navbar() {
     return (
         <nav id="navBar" className={`${styles.nav} pt-6 pb-6 pl-1 pr-1 sm:pt-8 sm:pb-8 sm:pr-14 sm:pl-14 lg:absolute lg:top-0 lg:left-0 lg:right-0 lg:z-20 lg:bg-transparent`}>
             <div className="flex justify-between items-center sm:justify-between sm:items-center lg:ml-8 lg:mr-8 xl:ml-28 xl:mr-28">
-                <Link to="/" onClick={() => setActiveLink("/")}>
+                <Link to="/e-commerce/" onClick={() => setActiveLink("/e-commerce/")}>
                     <div>
                         <h1 className={`${styles.logo} italic ml-2 sm:ml-0 text-xl lg:text-4xl`}>ShoeShop</h1>
                     </div>
@@ -66,7 +66,7 @@ export default function Navbar() {
                 <div ref={responsiveNavbarRef} className={`absolute z-30 top-74 w-full top-16 end-0 sm:absolute sm:z-30 sm:top-24 sm:w-full sm:end-0 lg:w-fit ${screenWidth >= 1024 ? styles.showNavLinksContainer : styles.navLinksContainer}`} >
                     <div className="flex flex-col items-center gap-y-4 sm:flex-col sm:items-center sm:gap-y-4 lg:flex-row lg:gap-x-8">
 
-                        <Link to="/" className={`${screenWidth >= 1024 ? `${styles.navLinkShow} ${activeLink === "/" ? styles.active : ""}` : `${styles.navLink} ${activeLink === "/" ? styles.active : ""}`}  lg:text-md`} onClick={() => setActiveLink("/")}>Home</Link>
+                        <Link to="/e-commerce/" className={`${screenWidth >= 1024 ? `${styles.navLinkShow} ${activeLink === "/e-commerce/" ? styles.active : ""}` : `${styles.navLink} ${activeLink === "/e-commerce/" ? styles.active : ""}`}  lg:text-md`} onClick={() => setActiveLink("/e-commerce/")}>Home</Link>
 
                         <Link to="/about" className={`${screenWidth >= 1024 ? `${styles.navLinkShow} ${activeLink === "/about" ? styles.active : ""}` : `${styles.navLink} ${activeLink === "/about" ? styles.active : ""}`} lg:text-md`} onClick={() => setActiveLink("/about")}>About</Link>
 

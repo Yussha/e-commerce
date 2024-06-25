@@ -13,14 +13,10 @@ import SideCart from "../../components/SideCart"
 // Module style
 import styles from './styles.module.css'
 
-import { Routes, Route } from "react-router-dom";
-
 export default function Home() {
     return (
         <section className={`${styles.customHome} h-auto w-auto relative`}>
-            <Routes>
-                <Route exact path='/' element={<Hero />} />
-            </Routes>
+            <Hero />
             <Banners />
             <FeaturedProduct />
             <ProductInfoModal />

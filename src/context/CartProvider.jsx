@@ -6,7 +6,7 @@ export default function ProductInCartProvider({ children, setActiveOverlay }) {
     const [productInCart, setProductInCart] = useState([]);
     const [openSideCart, setOpenSideCart] = useState(false);
     const [totalInCart, setTotalInCart] = useState(0);
-    const [activeLink, setActiveLink] = useState("/")
+    const [activeLink, setActiveLink] = useState("/e-commerce/")
 
     const [productInWishlist, setProductInWishlist] = useState([]);
 
