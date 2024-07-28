@@ -34,12 +34,12 @@ function App() {
           <main className='app'>
             <Navbar />
             <Routes>
-              <Route exact path='/e-commerce/' element={<Home />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/shop' element={<Shop />} />
-              <Route path='/contactUs' element={<ContactUs />} />
-              <Route path='/wishlist' element={<WishlistPage />} />
-              <Route path='/shoppingCartArea' element={<ShoppingCartArea />} />
+              <Route exact path='/' element={<Home />} />
+              <Route path='about' element={<About />} />
+              <Route path='shop' element={<Shop />} />
+              <Route path='contactUs' element={<ContactUs />} />
+              <Route path='wishlist' element={<WishlistPage />} />
+              <Route path='shoppingCartArea' element={<ShoppingCartArea />} />
             </Routes>
             <ProductCollection />
             <Footer />
